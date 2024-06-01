@@ -4,21 +4,13 @@ import shutil
 directory = os.path.join(os.path.expanduser("~"),"Downloads")
 
 extensions = {
-    ".jpg":"Images",
-    ".jpeg":"Images",
-    ".exe":"Application",
-    ".png":"Images",
-    ".gif":"Images",
-    ".mp4":"Videos",
-    ".mov":"Videos",
-    ".pptx":"Documents",
-    ".doc":"Documents",
-    ".docx":"Documents",
-    ".pdf":"Documents",
-    ".txt":"Documents",
-    ".mp3":"Music",
-    ".wav":"Music",
-
+    'Documents': ['.pdf', '.doc', '.docx', '.txt'],
+    'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp'],
+    'Videos': ['.mp4', '.mov', '.avi', '.mkv'],
+    'Music': ['.mp3', '.wav', '.aac'],
+    'Archives': ['.zip', '.tar', '.gz', '.rar'],
+    'Scripts': ['.py', '.sh', '.bat']
+    ".exe":"Application"
 }
 
 for filename in os.listdir(directory):
