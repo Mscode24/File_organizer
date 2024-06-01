@@ -1,4 +1,4 @@
-##Folder Organizer Script##
+## Folder Organizer Script ##
 This Python script organizes files in a specified directory by moving them into subfolders based on their file types.
 
 Features
